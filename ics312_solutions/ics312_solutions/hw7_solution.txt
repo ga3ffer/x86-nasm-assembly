@@ -1,0 +1,52 @@
+* Exercise #1:
+
+	2
+	3
+	return @ 
+	saved EBP
+	5
+	5
+	15
+	return @ to f
+	saved EBP
+	20
+
+* Exercise #2:
+
+	1
+	2
+	return @
+	saved EBP
+	z = ?
+        1
+	1
+	return @ to g
+	saved EBP
+	z = ?
+	1
+	0
+	return @ to g
+	saved EBP	
+	z = ?	
+
+
+* Exercise #3:
+
+	int a = 2;
+	int b;
+	
+	int main() {
+  	  b = f(a, 4);
+  	  printf("%d\n",b);
+ 	}
+	
+	int f(int x, int y) {
+  	  int z = 1;
+  	
+  	  if (x == 0) 
+    	    return z;
+ 	
+		
+  	  z = y + f(y, x-1);
+  	  return z;
+	}

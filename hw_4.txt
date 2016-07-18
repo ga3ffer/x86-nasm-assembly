@@ -1,0 +1,38 @@
+Homework #4
+
+Exercise #1
+
+1.
+
+65462d = ffb6h		;hex equivalent of 65462 decimal
+
+ax = 0035		;move 0035 into ax
+bl = ??			;move unknown value into bl
+bx = ff??		;sign-extend bl into bx
+
+    0035		;hex algebra
+  + ff??
+------------
+    ff81
+
+ax = ff81		;result of add bx to ax
+eax = 0000 ff81		;zero-extend ax into eax
+
+
+Exercise #2
+
+1. 8ff0 + a026 = 13061	CF = 1	OF = 0
+   eax = 0000 3061
+   print_int = 12310
+
+2. 6043 + 7abc = daff	CF = 0	OF = 1
+   eax = ffff daff
+   print_int = -9473
+
+3. f3 + 0d = 100	CF = 1	OF = 0
+   eax = 0000 0000
+   print_int = 0
+
+4. e5 + 03 = e8		CF = 0	OF = 0
+   eax = ffff ffe8
+   print_int = -24

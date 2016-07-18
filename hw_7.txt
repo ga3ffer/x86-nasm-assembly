@@ -1,0 +1,53 @@
+Homework #7
+
+Exercise #1
+
+2
+3
+return @ to main
+main's saved ebp
+a = 5
+5
+15
+return @ to f
+f's saved ebp
+20
+
+
+Exercise #2
+
+1
+2
+return @ to main
+main's saved EBP value
+z = ?		; g(1,1) is assigned to local variable
+1
+1
+return @ to first call of g
+first g's saved EBP
+z = ?		; g(0,1) is assigned to local variable
+1
+0
+return @ to second call of g
+second g's saved EBP
+z = ?		; before g return 1 so z is unknown
+
+
+Exercise #3
+
+
+main() {
+    a = 2
+    b = ?
+
+    b = f(a, 4)
+    print b
+    print nl    
+}
+
+f(int x, int y) {
+    z = 1
+    if (x != 0)
+      z = y + f(y, x - 1)
+    return z
+}

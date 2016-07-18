@@ -1,0 +1,142 @@
+Homework #1
+
+Exercise #1
+
+1. hex 2AE3 into binary
+
+ = 0010 1010 1110 0011 
+
+2. binary 1101100111101 into hex
+
+ = 1B3D 
+
+3. decimal 246 into binary ★
+
+ = 1111 0110
+
+246 is an even number that means the right most bit will be a '0'
+255 in binary is 1111 1111 so we need nine less than that. Since we can get the sum of nine with 8 + 1 which are power of two's we need to just flip the bit at the respective locations.
+
+4. decimal 613 into hex
+
+ in binary = 0010 0110 0101
+ in hex = 265
+
+5. hex 2E03 into decimal
+
+ 3  * (16^0) = 3
+ 0  * (16^1) = 0
+ 14 * (16^2) = 3584
+ 2  * (16^3) = 8192
+             = 11779
+
+Exercise #2
+
+             ccc cc 
+1. binary:    001011 
+           +  111011
+            ---------
+             1000110                  
+
+                cc ccc   
+2. binary:       010111 
+            +  10110011
+              ----------
+               11001010
+
+          ccc      
+3. hex:    FFA32 
+        +  99DE1
+          -------
+          199813 
+
+              ccc     
+4. hex:        F111 
+        +  FEFEFEFE
+          ----------
+           FEFFF00F           
+
+Exercise #3
+
+1. binary: 1X011 + 010Y1 = 100110
+ 
+ X = 1, Y = 1
+
+2. hex: A2X + 7YF3 = 8622
+
+ X = F, Y = B
+
+3. hex: FX621 + 12YFF = 10F120
+
+ X = C, Y = A
+
+Exercise #4
+
+1. 335 = 0000 0001 0100 1111
+
+2. -3 = 0000 0000 0000 0011
+ 
+One's complement = 1111 1111 1111 1100
+Two's complement = 1111 1111 1111 1101  
+
+3. 0 = 0000 0000 0000 0000
+
+4. -17 = 0000 0000 0001 0001
+
+One's complement = 1111 1111 1110 1110
+Two's complement = 1111 1111 1110 1111
+  
+5. -104 = 0000 0000 0110 1000
+
+One's complement = 1111 1111 1001 0111
+Two's complement = 1111 1111 1001 1000  
+
+Exercise #5
+
+1. 761
+
+ 761 = 47*16 + 9
+  47 = 2*16  + 15
+   2 = 0*16  + 2
+
+     = 2F9
+ 
+2. -2 = 0002h
+
+ One's Complement = FFFD
+ Two's Complement = FFFE
+
+3. -1,421 = 
+
+ 1421 = 88*16 + 13
+   88 = 5*16  + 8
+    5 = 0*16  + 5
+
+      = 58D
+
+ One's Complement = FA72
+ Two's Complement = FA73
+
+Exercise #6
+
+1. B34
+
+ in binary = 1011 0011 0100 this is a negative number because left most digit is a '1'
+ 
+ One's complement = 0100 1100 1011
+ Two's complement = 0100 1100 1100 = -1228
+ 
+
+2. 82F
+
+ in binary = 1000 0010 1111 negative number because left most digit is a '1'
+ 
+ One's complement = 0111 1101 0000
+ Two's complement = 0111 1101 0001 = -2001
+
+3. 7BA
+
+ in binary = 0111 1011 1010 positive number since left most digit is '0'
+ 
+ = 1978
+

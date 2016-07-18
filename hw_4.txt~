@@ -1,0 +1,35 @@
+Homework #4
+
+Exercise #1
+
+1.
+
+65462d = ffb6h		;hex equivalent of 65462 decimal
+
+ax = 0035		;move 0035 into ax
+bl = ??			;move unknown value into bl
+bx = ff??		;sign-extend bl into bx
+
+    0035		;hex algebra
+  + ff??
+------------
+    ff81
+
+ax = ff81		;result of add bx to ax
+eax = 0000 ff81		;zero-extend ax into eax
+
+2.
+
+|FA|11|43|BB|CE|00|15|00|15|00|15|00|00|00|B2|61|36|62|00|FF|F8|FF|F8|00|09|
+
+
+Exercise #2
+
+Memory content:
+
+|B3|01|68|65|6C|6C|6F|00|A1|B2|C3|13|00|
+
+
+Memory content after code executes:
+
+|B3|01|00|13|C3|B2|6F|00|A1|A1|B2|C3|13|

@@ -1,0 +1,229 @@
+********************** Exercise #1 **********************
+
+1. 2AE3 into binary
+	2 = 0010
+	A = 1010
+	E = 1110
+	3 = 0011
+
+   answer: 0010 1010 1110 0011
+
+2. 1101100111101 into hex
+
+   add 3 leading 0's: 0001 1011 0011 1101
+
+	0001 = 1
+	1011 = B
+	0011 = 3
+	1101 = D
+
+  answer: 1B3D
+
+3. 246 into binary
+
+   Systematic method:	246 = 2 * 123 + 0
+			123 = 2 * 61  + 1
+			61  = 2 * 30  + 1
+			30  = 2 * 15  + 0
+			15  = 2 * 7   + 1
+			7   = 2 * 3   + 1
+			3   = 2 * 1   + 1
+			1   = 2 * 0   + 1
+
+	answer: 11110110
+
+   Fast method:
+
+	255 =  11111111
+	9   =  00001001
+
+	246 = 255 - 9
+	    =  11110110
+
+4. 613 into hex
+
+	592 = 16 * 38 + 5
+	38  = 16 * 2  + 6
+	2   = 16 * 0  + 2
+
+	answer: 265
+
+5. 2E03 into decimal
+
+   answer: 2*16^3 + 14*16^2 + 3 = 11,779
+
+********************** Exercise #2 **********************
+
+1.  ccc cc
+     001011
+  +  111011
+     ------ 
+    1000100
+	
+	answer: 5 carries
+
+2.     cc ccc    
+        010111
+    + 10110011
+      --------
+      11001010
+
+	answer: 5 carries
+
+3.      cccc
+         FFA32
+      +  99DE1
+        ------
+        199813  
+
+	answer: 4 carries
+
+4.       ccc      
+          F111
+    + FEFEFEFE
+      --------
+      FEFFF00F      
+
+	answer: 3 carries
+
+********************** Exercise #3 **********************
+
+1.    1X011
+    + 010Y1 
+    -------
+     100110
+
+     We have:  1 + Y + carry = 1   (and a carry is generated)
+	
+	therefore Y = 1
+
+     We have X + 1 (no carry) = 0
+
+	therefore X = 1
+         
+2.     A2X
+    + 7YF3
+    ------
+      8622
+
+    We have X+ 3 = 2 (and a carry is generated)
+
+	therefore X = F
+
+    We have A + Y + carry = 6  and a carry is generated
+	
+	(in decimal:  10 + Y + 1 = 6 + 16, which gives Y = 11)
+ 
+    Therefore Y = B
+
+3.     FX621
+    +  12YFF
+    --------
+      10F120
+
+    We have 6 + Y + carry = 1 + carry
+
+	(in decimal: 6 + Y + 1  = 1 + 16, which gives Y = 10)
+
+    Therefore Y = A
+
+    We have X + 2 + carry = F
+
+	(in decimal: X + 2 + 1 = 15, which gives X = 12)
+
+    Therefore X = C
+
+********************** Exercise #4 **********************
+
+1. 335 in binary 2's complement
+
+   335 in 16-bit binary: 00000001 01001111
+   355 is a positive number
+   So its 2's complement representation is simply 00000001 01001111
+
+2. -3 in binary 2's complement
+
+   3 in (16-bit) binary: 00000000 00000011
+   Let's invert it:      11111111 11111100
+   Add one: 		 11111111 11111101
+
+   answer: 11111111 11111101
+
+3. 0 in binary 2's complement
+
+   0 in (16-bit) binary: 00000000 00000000
+   355 is a positive number
+   So its 2's complement representation is simply 00000000 00000000
+
+4. -17 in binary 2's complement
+
+   17 in (16-bit) binary: 00000000 00010001
+   Let's invert it:       11111111 11101110
+   Add one:               11111111 11101111
+
+   answer: 11111111 11101111
+
+5. -104 in binary 2's complement
+
+   104 in (16-bit) binary: 00000000 01101000
+   Let's invert it: 	   11111111 10010111
+   Add one:                11111111 10011000
+
+   answer: 11111111 10011000
+
+********************** Exercise #5 **********************
+
+1. 761 in hex 2's complement
+
+   761 in (32-bit) hex is: 00 00 02 F9
+   761 is a positive number
+   So its 2's complement representation is simply 00 00 02 F9
+
+2. -2
+
+   2 in (32-bit) hex is: 00 00 00 02
+   Let's invert it:      FF FF FF FD
+   Add one:              FF FF FF FE
+
+   Answer: FF FF FF FE
+
+3. -1,421
+
+   1421 in (32-bit) hex is:  00 00 05 8D
+   Let's invert it:           FF FF FA 72
+   Add one:                  FF FF FA 73
+
+   Answer: FF FF FA 73
+
+********************** Exercise #6 **********************
+
+1.  B34 
+
+    B34's most significant bit is 1
+    Therefore it encodes a negative number
+    Let's invert: 4CB
+    Add one:      4CC
+
+    4CC is hex for decimal 4*16^2 + 12*16 + 12 = 1228 
+    
+    answer: -1228
+
+2. 82F
+
+   82F's most significant bit is 1
+   Therefore it encodes a negative number
+   Let's invert: 7D0
+   Add one:      7D1
+
+   7D1 is hex for decimal 7*16^2 + 13*16 + 1 = 2001
+
+   answer: -2001
+
+3. 7BA
+
+   7BA's most significant bit is 0
+   Therefore it encodes a positive number
+   
+   7BA is hex for decimal 7*16^2 + 11*16 + 10 = 1978
+
+   answer: 1978
